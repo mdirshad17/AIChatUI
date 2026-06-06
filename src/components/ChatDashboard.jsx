@@ -50,7 +50,7 @@ export default function ChatDashboard() {
         return;
       }
 
-      // Read the incoming Flux stream chunk by chunk
+      
       const reader = response.body.getReader();
       const decoder = new TextDecoder('utf-8');
 
