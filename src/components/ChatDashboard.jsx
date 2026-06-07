@@ -37,7 +37,7 @@ export default function ChatDashboard() {
     const token = localStorage.getItem('jwt_token');
 
     try {
-      const response = await fetch(`http://localhost:8080/chat-stream?message=${encodeURIComponent(userMessage)}`, {
+      const response = await fetch(`http://3.108.194.133:8080/chat-stream?message=${encodeURIComponent(userMessage)}`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}` // Attach the JWT to bypass the Spring filter
