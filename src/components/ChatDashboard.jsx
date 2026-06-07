@@ -10,7 +10,6 @@ export default function ChatDashboard() {
   // Protect the route: Kick user out if no token exists
   useEffect(() => {
     const token = localStorage.getItem('jwt_token');
-    console.log("This is the token",token)
     if (!token) {
       navigate('/');
     }
