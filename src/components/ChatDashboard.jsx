@@ -28,10 +28,10 @@ export default function ChatDashboard() {
     setMessage('');
     setIsTyping(true);
 
-    // Add user message to UI immediately
+    
     setChatHistory((prev) => [...prev, { role: 'user', content: userMessage }]);
     
-    // Create a placeholder for the AI's streaming response
+    
     setChatHistory((prev) => [...prev, { role: 'ai', content: '' }]);
 
     const token = localStorage.getItem('jwt_token');
